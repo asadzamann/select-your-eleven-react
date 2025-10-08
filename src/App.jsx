@@ -1,27 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import navImg from './assets/logo.png'
+import dollarImg from './assets/pngimg.com - dollar_sign_PNG29 (1).png'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
+    {/* Navbar */}
+      <div>
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="flex-1">
+            <a class="btn btn-ghost text-xl">
+              <img src={navImg} alt="" />
+            </a>
+          </div>
+          <div class="flex-none">
+            <button class="btn btn-square btn-ghost">
+              <span>6000000000000</span>
+              <img src={dollarImg} alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
