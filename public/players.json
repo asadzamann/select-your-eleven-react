@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Glenn Maxwell",
-    "image": "https://example.com/players/glenn_maxwell.jpg",
+    "image": "https://i.ibb.co.com/NgGZNZ24/Glenn-Maxwell.jpg",
     "country": "Australia",
     "team": "Melbourne Stars",
     "role": "All-Rounder",
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "name": "Chris Lynn",
-    "image": "https://example.com/players/chris_lynn.jpg",
+    "image": "https://i.ibb.co.com/MyVpkFyf/chris-lynn-bbl09.webp",
     "country": "Australia",
     "team": "Adelaide Strikers",
     "role": "Batsman",
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "name": "Rashid Khan",
-    "image": "https://example.com/players/rashid_khan.jpg",
+    "image": "https://i.ibb.co.com/cKJsVs5Y/Rashid-Khan.png",
     "country": "Afghanistan",
     "team": "Adelaide Strikers",
     "role": "Bowler",
@@ -56,7 +56,7 @@
   {
     "id": 4,
     "name": "Marcus Stoinis",
-    "image": "https://example.com/players/marcus_stoinis.jpg",
+    "image": "https://i.ibb.co.com/nMfph4BF/Marcus-Stoinis.jpg",
     "country": "Australia",
     "team": "Melbourne Stars",
     "role": "All-Rounder",
@@ -74,7 +74,7 @@
   {
     "id": 5,
     "name": "Andre Russell",
-    "image": "https://example.com/players/andre_russell.jpg",
+    "image": "https://i.ibb.co.com/9mBjvRRd/Andre-Russellavif.jpg",
     "country": "West Indies",
     "team": "Sydney Thunder",
     "role": "All-Rounder",
@@ -92,7 +92,7 @@
   {
     "id": 6,
     "name": "David Warner",
-    "image": "https://example.com/players/david_warner.jpg",
+    "image": "https://i.ibb.co.com/k6vYF4RL/David-Warner.png",
     "country": "Australia",
     "team": "Sydney Thunder",
     "role": "Batsman",
@@ -110,7 +110,7 @@
   {
     "id": 7,
     "name": "Adam Zampa",
-    "image": "https://example.com/players/adam_zampa.jpg",
+    "image": "https://i.ibb.co.com/BVpysXPB/Adam-Zampa.jpg",
     "country": "Australia",
     "team": "Melbourne Stars",
     "role": "Bowler",
@@ -128,7 +128,7 @@
   {
     "id": 8,
     "name": "Matthew Wade",
-    "image": "https://example.com/players/matthew_wade.jpg",
+    "image": "https://i.ibb.co.com/1Y46ZVHZ/Matthew-Wade.png",
     "country": "Australia",
     "team": "Hobart Hurricanes",
     "role": "Wicketkeeper-Batsman",
@@ -146,7 +146,7 @@
   {
     "id": 9,
     "name": "Mitchell Marsh",
-    "image": "https://example.com/players/mitchell_marsh.jpg",
+    "image": "https://i.ibb.co.com/ZzyhjKqc/Mitchell-Marsh.webp",
     "country": "Australia",
     "team": "Perth Scorchers",
     "role": "All-Rounder",
@@ -164,7 +164,7 @@
   {
     "id": 10,
     "name": "Alex Carey",
-    "image": "https://example.com/players/alex_carey.jpg",
+    "image": "https://i.ibb.co.com/4wjJWNQR/Alex-Carey.png",
     "country": "Australia",
     "team": "Adelaide Strikers",
     "role": "Wicketkeeper-Batsman",
@@ -182,7 +182,7 @@
   {
     "id": 11,
     "name": "Trent Boult",
-    "image": "https://example.com/players/trent_boult.jpg",
+    "image": "https://i.ibb.co.com/3mfv2cf0/Trent-Boult.png",
     "country": "New Zealand",
     "team": "Melbourne Stars",
     "role": "Bowler",
@@ -200,7 +200,7 @@
   {
     "id": 12,
     "name": "Sam Billings",
-    "image": "https://example.com/players/sam_billings.jpg",
+    "image": "https://i.ibb.co.com/1YQg7yjb/sam-billings.webp",
     "country": "England",
     "team": "Sydney Thunder",
     "role": "Wicketkeeper-Batsman",
