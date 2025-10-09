@@ -7,7 +7,7 @@ import SelectedPlayers from './SelectedPlayers/SelectedPlayers'
 
 
 function App() {
-  const fetchPlayerData = fetch('../public/players.json')
+  const fetchPlayerData = fetch('../players.json')
     .then(response => response.json())
 
   return (
