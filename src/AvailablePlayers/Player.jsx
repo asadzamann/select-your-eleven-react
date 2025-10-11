@@ -4,9 +4,9 @@ const Player = ({player}) => {
      const {name , image, country, role, rating, battingStyle, basePrice} = player;
     return (
        <div>
-            <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
-                    <img
+            <div className="card bg-base-100 w-[424px] h-[528px] shadow-md ">
+                <figure className='w-96 h-64'>
+                    <img className='h-full w-full object-contain object-top'
                         src={image}
                         alt="Shoes" />
                 </figure>
