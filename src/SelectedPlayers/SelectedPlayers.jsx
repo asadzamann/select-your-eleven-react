@@ -3,7 +3,7 @@ import React from 'react';
 const SelectedPlayers = () => {
     return (
         <div>
-            SelectedPlayers
+            <h1>Selected Players</h1>
         </div>
     );
 };
