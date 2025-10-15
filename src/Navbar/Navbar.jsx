@@ -4,7 +4,7 @@ import dollarSign from '../assets/dollar-sign-solid-full.svg'
 const Navbar = () => {
     return (
         <div>
-            <div className="max-[1200px] w-11/12 mx-auto navbar bg-base-100">
+            <div className="max-w-[1200px] mx-auto navbar bg-base-100">
                 <div className="flex-1">
                    <img src={logo} alt="" />
                 </div>

@@ -7,8 +7,8 @@ const AvailablePlayers = ({fetchPlayerData}) => {
     console.log(playersData)
 
     return (
-        <div className='w-11/12 mx-auto'>
-            <h1 className='text-2xl font-bold'>Available Players</h1>
+        <div className='max-w-[1200px] mx-auto'>
+           
             <hr className='my-3 border border-gray-300' />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         { playersData.map(player => <Player player={player}></Player>)}
