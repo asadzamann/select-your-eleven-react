@@ -10,7 +10,7 @@ function App() {
   const fetchPlayerData = fetch('../players.json')
     .then(response => response.json())
 
-    const [toggle , setToggle] = useState(false)
+    const [toggle , setToggle] = useState(true)
 
   return (
     <>
@@ -18,8 +18,8 @@ function App() {
       <div className='flex items-center justify-between mx-auto max-w-[1200px]'>
          <h1 className='text-2xl font-bold'>Available Players</h1>
         <div>
-          <button className='font-bold py-3 px-4 border border-gray-300 rounded-l-3xl bg-[#E7FE29]'>Available</button>
-          <button className='font-bold py-3 px-4 border border-gray-300 rounded-r-3xl border-l-0'>Selected <span>(0)</span></button>
+          <button onClick={() => setToggle(true)} className='btn font-bold py-3 px-4 border border-gray-300 rounded-l-3xl bg-[#E7FE29]'>Available</button>
+          <button onClick={() => setToggle(false)} className='btn font-bold py-3 px-4 border border-gray-300 rounded-r-3xl border-l-0'>Selected <span>(0)</span></button>
         </div>
 
       </div>
