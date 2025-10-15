@@ -17,9 +17,9 @@ function App() {
       <Navbar></Navbar>
       <div className='flex items-center justify-between mx-auto max-w-[1200px]'>
          <h1 className='text-2xl font-bold'>Available Players</h1>
-        <div>
-          <button onClick={() => setToggle(true)} className='btn font-bold py-3 px-4 border border-gray-300 rounded-l-3xl bg-[#E7FE29]'>Available</button>
-          <button onClick={() => setToggle(false)} className='btn font-bold py-3 px-4 border border-gray-300 rounded-r-3xl border-l-0'>Selected <span>(0)</span></button>
+        <div className='font-bold'>
+          <button onClick={() => setToggle(true)} className={`py-3 px-4 border-1 border-gray-300 rounded-l-2xl border-r-0 ${toggle===true?'bg-[#E7FE29]' : ''} `}>Available</button>
+          <button onClick={() => setToggle(false)} className={`py-3 px-4 border-1 border-gray-300 rounded-r-2xl border-l-0 ${toggle === false ? 'bg-[#E7FE29]' : ''}`}>Selected <span>(0)</span></button>
         </div>
 
       </div>
