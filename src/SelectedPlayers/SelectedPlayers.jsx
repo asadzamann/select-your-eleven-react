@@ -4,7 +4,6 @@ const SelectedPlayers = () => {
     return (
         <div>
             <h1>Selected Players</h1>
-            <h2>Choose</h2>
         </div>
     );
 };

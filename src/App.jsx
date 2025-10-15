@@ -10,6 +10,8 @@ function App() {
   const fetchPlayerData = fetch('../players.json')
     .then(response => response.json())
 
+    const [toggle , setToggle] = useState(false)
+
   return (
     <>
       <Navbar></Navbar>
@@ -21,10 +23,11 @@ function App() {
         </div>
 
       </div>
-      <Suspense fallback={<h2>Player Data Is Loading</h2>}>
+      { toggle === true? <Suspense fallback={<h2>Player Data Is Loading</h2>}>
         <AvailablePlayers fetchPlayerData={fetchPlayerData}></AvailablePlayers>
-      </Suspense>
-      <SelectedPlayers></SelectedPlayers>
+      </Suspense> :   <SelectedPlayers></SelectedPlayers>}
+      
+    
     </>
   )
 }
