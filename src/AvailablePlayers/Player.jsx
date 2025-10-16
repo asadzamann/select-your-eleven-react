@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Player = ({player}) => {
-     const {name , image, country, role, rating, battingStyle, basePrice} = player;
+const Player = ({ player }) => {
+    const { name, image, country, role, rating, battingStyle, basePrice } = player;
+    const [isSelected, setSelected] = useState(false);
     return (
-       <div>
+        <div>
             <div className="card bg-base-100 w-[350px] h-[528px] shadow-md ">
                 <figure className='w-96 h-64'>
                     <img className='h-full w-full object-contain object-top'
@@ -12,7 +13,7 @@ const Player = ({player}) => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                       {name}
+                        {name}
                     </h2>
                     <div className="card-actions justify-between">
                         <div className="text-gray-500">{country}</div>
@@ -29,7 +30,7 @@ const Player = ({player}) => {
                     </div>
                     <div className="card-actions justify-between items-center">
                         <div className="font-bold">Price: {basePrice}$</div>
-                        <div className="text-gray-500 btn btn-outline border-gray-300">Choose Player</div>
+                        <button disabled={isSelected} onClick={()=>setSelected(true)} className="text-gray-500 btn btn-outline border-gray-300 ">{isSelected === true ? 'Selected' : 'Choose Player'}</button>
                     </div>
                 </div>
             </div>
