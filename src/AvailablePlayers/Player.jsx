@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
 
-const Player = ({ player }) => {
+const Player = ({ player , setAvailableBalance , availableBalance}) => {
     const { name, image, country, role, rating, battingStyle, basePrice } = player;
     const [isSelected, setSelected] = useState(false);
+    const handleSelected = () => {
+        if(availableBalance < basePrice){
+            alert('Not Enough Balance');
+            return;
+        }
+      
+       setSelected(true);
+       setAvailableBalance(availableBalance - basePrice)
+    }
     return (
         <div>
             <div className="card bg-base-100 w-[350px] h-[528px] shadow-md ">
@@ -30,7 +39,7 @@ const Player = ({ player }) => {
                     </div>
                     <div className="card-actions justify-between items-center">
                         <div className="font-bold">Price: {basePrice}$</div>
-                        <button disabled={isSelected} onClick={()=>setSelected(true)} className="text-gray-500 btn btn-outline border-gray-300 ">{isSelected === true ? 'Selected' : 'Choose Player'}</button>
+                        <button disabled={isSelected} onClick={handleSelected} className="text-gray-500 btn btn-outline border-gray-300 ">{isSelected === true ? 'Selected' : 'Choose Player'}</button>
                     </div>
                 </div>
             </div>
