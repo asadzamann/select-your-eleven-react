@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Player = ({ player , setAvailableBalance , availableBalance, setShowSelected}) => {
+const Player = ({ player , setAvailableBalance , availableBalance, setShowSelected, showSelected}) => {
     const { name, image, country, role, rating, battingStyle, basePrice } = player;
     const [isSelected, setSelected] = useState(false);
     const handleSelected = () => {
@@ -11,7 +11,7 @@ const Player = ({ player , setAvailableBalance , availableBalance, setShowSelect
       
        setSelected(true);
        setAvailableBalance(availableBalance - basePrice);
-       setShowSelected()
+       setShowSelected([...showSelected , player])
     }
     return (
         <div>
