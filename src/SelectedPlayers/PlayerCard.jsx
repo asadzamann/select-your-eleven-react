@@ -1,8 +1,10 @@
 import React from 'react';
 
-const PlayerCard = ({player}) => {
-    console.log(player)
+const PlayerCard = ({player , removePlayer}) => {
     const {name, battingStyle, image} = player;
+    const handleRemove = () => {
+        removePlayer(player);
+    }
     return (
          <div className='max-w-[1200px] mx-auto flex justify-between items-center border border-gray-300 rounded-2xl p-3'>
             <div className='flex '>
@@ -13,7 +15,7 @@ const PlayerCard = ({player}) => {
 
             </div>
             </div>
-            <button className=' w-[24px] h-[24px] cursor-pointer'>
+            <button onClick={handleRemove} className=' w-[24px] h-[24px] cursor-pointer'>
         <img src="https://i.ibb.co.com/pjYf2Ksq/image.png" alt="" />
             </button>
         </div>

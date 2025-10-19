@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Player = ({ player , setAvailableBalance , availableBalance, setShowSelected, showSelected}) => {
     const { name, image, country, role, rating, battingStyle, basePrice } = player;
     const [isSelected, setSelected] = useState(false);
     const handleSelected = () => {
+       if(showSelected.length === 11){
+        toast('11 Players Already Selected!');
+        return;
+       }
         if(availableBalance < basePrice){
-            alert('Not Enough Balance');
+            toast('Not Enough Balance');
             return;
         }
-      
+        
        setSelected(true);
        setAvailableBalance(availableBalance - basePrice);
        setShowSelected([...showSelected , player])
